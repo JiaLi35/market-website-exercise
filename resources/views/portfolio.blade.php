@@ -4,7 +4,7 @@
     <!-- Page Header -->
     @include("layouts.parts.header", [
         "title" => "OUR PORTFOLIO",
-        "description" => "Success Stories from Our Clients"    
+        "desc" => "Success Stories from Our Clients"    
     ])
 
     <!-- Filter Section -->

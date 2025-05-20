@@ -4,7 +4,7 @@
     <!-- Page Header -->
     @include("layouts.parts.header", [
         "title" => "OUR SERVICES",
-        "description" => "Comprehensive Digital Marketing Solutions"    
+        "desc" => "Comprehensive Digital Marketing Solutions"    
     ])
 
     <!-- Services Section -->
@@ -117,15 +117,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-primary text-white py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Ready to Boost Your Online Presence?</h2>
-        <p class="lead mb-4">
-          Let's create a custom digital marketing strategy for your business.
-        </p>
-        <a href="contact.html" class="btn btn-light btn-lg"
-          >Get a Free Consultation</a
-        >
-      </div>
-    </section>
+    @include("layouts.parts.cta", [
+      "title" => "Ready to Boost Your Online Presence?",
+      "desc" => "Let's create a custom digital marketing strategy for your business.",
+      "btn" => "Get a Free Consultation"  
+    ])
 @endsection

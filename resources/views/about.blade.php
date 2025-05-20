@@ -4,7 +4,7 @@
     <!-- Page Header -->
     @include("layouts.parts.header", [
         "title" => "ABOUT US",
-        "description" => "Meet the Team Behind MarketPro Agency"    
+        "desc" => "Meet the Team Behind MarketPro Agency"    
     ])
 
     <!-- About Section -->

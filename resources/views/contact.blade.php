@@ -4,7 +4,7 @@
     <!-- Page Header -->
     @include("layouts.parts.header", [
         "title" => "CONTACT US",
-        "description" => "Let's Start Your Digital Marketing Journey"    
+        "desc" => "Let's Start Your Digital Marketing Journey"    
     ])
 
     <!-- Contact Section -->
@@ -152,13 +152,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-primary text-white py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Ready to Start Your Project?</h2>
-        <p class="lead mb-4">
-          Schedule a free consultation with our marketing experts.
-        </p>
-        <a href="#" class="btn btn-light btn-lg">Book a Meeting</a>
-      </div>
-    </section>
+    @include("layouts.parts.cta", [
+        "title" => "READY TO START YOUR PROJECT?",
+        "desc" => "Schedule a free consultation with our marketing experts.",
+        "btn" => "Book a Meeting"
+    ])
 @endsection

@@ -71,13 +71,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-primary text-white py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Ready to Grow Your Business?</h2>
-        <p class="lead mb-4">
-          Let's discuss how we can help you achieve your marketing goals.
-        </p>
-        <a href="contact.html" class="btn btn-light btn-lg">Contact Us Today</a>
-      </div>
-    </section>
+    @include("layouts.parts.cta", [
+      "title" => "READY TO GROW YOUR BUSINESS?",
+      "desc" => "Let's discuess how we can help you achieve your marketing goals.",
+      "btn" => "Contact Us Today"  
+    ])
 @endsection
