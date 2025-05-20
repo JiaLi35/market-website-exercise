@@ -84,94 +84,30 @@
       <div class="container">
         <h2 class="text-center mb-5">Meet Our Team</h2>
         <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sarah Johnson</h5>
-                <p class="text-muted">CEO & Founder</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Mike Wilson</h5>
-                <p class="text-muted">Creative Director</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Emily Chen</h5>
-                <p class="text-muted">Head of SEO</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-center border-0">
-              <img
-                src="https://placehold.co/200x200"
-                class="card-img-top rounded-circle mx-auto"
-                style="width: 150px"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h5 class="card-title">David Brown</h5>
-                <p class="text-muted">PPC Specialist</p>
-                <div class="social-links">
-                  <a href="#" class="text-muted me-2"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- column start -->
+            @include("layouts.parts.teamcard", [
+              "name" => "Sarah Johnson",  
+              "position" => "CEO & Founder"
+            ])
+          <!-- column end -->
+          <!-- column start -->
+          @include("layouts.parts.teamcard", [
+              "name" => "Mike Wilson", 
+              "position" => "Creative Director"
+            ])
+          <!-- column end -->
+          <!-- column start -->
+          @include("layouts.parts.teamcard", [
+              "name" => "Emily Chen", 
+              "position" => "Head of SEO"
+            ])
+          <!-- column end -->
+          <!-- column start -->
+          @include("layouts.parts.teamcard", [
+              "name" => "David Brown", 
+              "position" => "PPC Specialist"
+            ])
+          <!-- column end -->
         </div>
       </div>
     </section>

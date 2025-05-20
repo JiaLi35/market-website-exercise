@@ -639,6 +639,7 @@ section h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 900;
     text-transform: uppercase;
+    text-align: center;
 }
 
 section h2::after {
