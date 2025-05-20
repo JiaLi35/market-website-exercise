@@ -1,5 +1,9 @@
 @extends("layouts.app")
 
+@include("layouts.parts.nav", [
+    "active" => "home"
+  ])
+
 @section("content")
 <!-- Hero Section -->
     <section class="hero-section text-white text-center py-5">
@@ -26,7 +30,7 @@
         <div class="row g-4">
           <!-- column start -->
             @include("layouts.parts.ourservices", [
-              "class" => "bi-search",
+              "icon" => "search",
               "title" => "SEO Optimization",
               "desc" => "Boost your search rankings and drive organic traffic with our
               expert SEO strategies."  
@@ -34,7 +38,7 @@
           <!-- column end -->
           <!-- column start -->
           @include("layouts.parts.ourservices", [
-              "class" => "bi-share",
+              "icon" => "share",
               "title" => "Social Media Marketing",
               "desc" => "Engage your audience and build brand awareness across all
               social platforms."  
@@ -42,7 +46,7 @@
           <!-- column end -->
           <!-- column start -->
           @include("layouts.parts.ourservices", [
-              "class" => "bi-graph-up",
+              "icon" => "graph-up",
               "title" => "PPC Advertising",
               "desc" => "Maximize ROI with targeted pay-per-click campaigns that
               convert."  
