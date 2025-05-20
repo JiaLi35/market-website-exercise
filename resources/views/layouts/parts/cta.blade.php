@@ -4,6 +4,6 @@
         <p class="lead mb-4">
           {{ $desc }}
         </p>
-        <a href="contact.html" class="btn btn-light btn-lg">{{ $btn }}</a>
+        <a href="{{ $buttonurl ?? '/contact' }}" class="btn btn-light btn-lg">{{ $btntext }}</a>
       </div>
     </section>

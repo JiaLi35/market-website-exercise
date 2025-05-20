@@ -155,6 +155,7 @@
     @include("layouts.parts.cta", [
         "title" => "READY TO START YOUR PROJECT?",
         "desc" => "Schedule a free consultation with our marketing experts.",
-        "btn" => "Book a Meeting"
+        "btntext" => "Book a Meeting",
+        "buttonurl" => "/contact"
     ])
 @endsection

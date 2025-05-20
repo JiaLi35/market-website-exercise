@@ -120,6 +120,7 @@
     @include("layouts.parts.cta", [
       "title" => "Ready to Boost Your Online Presence?",
       "desc" => "Let's create a custom digital marketing strategy for your business.",
-      "btn" => "Get a Free Consultation"  
+      "btntext" => "Get a Free Consultation",
+      "buttonurl" => "/contact"
     ])
 @endsection

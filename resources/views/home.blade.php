@@ -56,6 +56,7 @@
     @include("layouts.parts.cta", [
       "title" => "READY TO GROW YOUR BUSINESS?",
       "desc" => "Let's discuess how we can help you achieve your marketing goals.",
-      "btn" => "Contact Us Today"  
+      "btntext" => "Contact Us Today",
+      "buttonurl" => "/contact"
     ])
 @endsection
