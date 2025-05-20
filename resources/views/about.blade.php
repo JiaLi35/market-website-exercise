@@ -117,34 +117,34 @@
       <div class="container">
         <h2 class="text-center mb-5">Our Achievements</h2>
         <div class="row text-center">
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-trophy display-4 text-primary"></i>
-              <h3 class="mt-3">500+</h3>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-graph-up display-4 text-primary"></i>
-              <h3 class="mt-3">150%</h3>
-              <p>Average ROI</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-award display-4 text-primary"></i>
-              <h3 class="mt-3">25+</h3>
-              <p>Industry Awards</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="achievement">
-              <i class="bi bi-people display-4 text-primary"></i>
-              <h3 class="mt-3">50+</h3>
-              <p>Team Members</p>
-            </div>
-          </div>
+          <!-- column start -->
+            @include("layouts.parts.achievements", [
+              "class" => "bi-trophy",
+              "stats" => "500+",
+              "desc" => "Happy Clients"  
+            ])
+          <!-- column end -->
+          <!-- column start -->
+          @include("layouts.parts.achievements", [
+              "class" => "bi-graph-up",
+              "stats" => "150%",
+              "desc" => "Average ROI"  
+            ])
+          <!-- column end -->
+          <!-- column start -->
+          @include("layouts.parts.achievements", [
+              "class" => "bi-award",
+              "stats" => "25+",
+              "desc" => "Industry Awards"  
+            ])
+          <!-- column end -->
+          <!-- column start -->
+          @include("layouts.parts.achievements", [
+              "class" => "bi-people",
+              "stats" => "50+",
+              "desc" => "Team Members"  
+            ])
+          <!-- column end -->
         </div>
       </div>
     </section>
