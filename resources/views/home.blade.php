@@ -25,7 +25,7 @@
         <h2 class="text-center mb-5">Our Services</h2>
         <div class="row g-4">
           <!-- column start -->
-            @include("layouts.parts.services", [
+            @include("layouts.parts.ourservices", [
               "class" => "bi-search",
               "title" => "SEO Optimization",
               "desc" => "Boost your search rankings and drive organic traffic with our
@@ -33,7 +33,7 @@
             ])
           <!-- column end -->
           <!-- column start -->
-          @include("layouts.parts.services", [
+          @include("layouts.parts.ourservices", [
               "class" => "bi-share",
               "title" => "Social Media Marketing",
               "desc" => "Engage your audience and build brand awareness across all
@@ -41,7 +41,7 @@
             ])
           <!-- column end -->
           <!-- column start -->
-          @include("layouts.parts.services", [
+          @include("layouts.parts.ourservices", [
               "class" => "bi-graph-up",
               "title" => "PPC Advertising",
               "desc" => "Maximize ROI with targeted pay-per-click campaigns that
